@@ -1,5 +1,5 @@
 /**
-    * Vue-page-designer v1.0.2
+    * Vue-page-designer v1.0.1
     * (c) 2019 fireyy
     * @license WTFPL
     */
