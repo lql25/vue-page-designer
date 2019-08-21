@@ -1,9 +1,9 @@
 {
-  "name": "vue-page-designer",
-  "version": "1.0.1",
+  "name": "vue-page-design",
+  "version": "1.0.2",
   "description": "A vue component for drag-and-drop to design and build mobile website.",
   "repository": {
-    "url": "fireyy/vue-page-designer",
+    "url": "lql25/vue-page-designer",
     "type": "git"
   },
   "module": "dist/vue-page-designer.esm.js",
@@ -28,7 +28,7 @@
     "deploy": "npm run build:example && npm run gh",
     "release": "npm run build && npm run bump && git push --follow-tags origin master && npm publish"
   },
-  "author": "fireyy <fireyy@gmail.com>",
+  "author": "lql25 <425910392@qq.com>",
   "dependencies": {
     "nanoid": "^1.0.1",
     "node-sass": "^4.12.0",

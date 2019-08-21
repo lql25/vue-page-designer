@@ -38,17 +38,17 @@
       </div>
     </div>
 
-    <div
-      class="panel-row"
-      flex>
-      <vpd-icon name="clock" />
-      <div class="panel-label">截止日期</div>
-      <div class="panel-value">
-        <input
-          v-model="activeElement.endTime"
-          type="date">
-      </div>
-    </div>
+    <!--<div-->
+    <!--class="panel-row"-->
+    <!--flex>-->
+    <!--<vpd-icon name="clock" />-->
+    <!--<div class="panel-label">截止日期</div>-->
+    <!--<div class="panel-value">-->
+    <!--<input-->
+    <!--v-model="activeElement.endTime"-->
+    <!--type="date">-->
+    <!--</div>-->
+    <!--</div>-->
   </div>
 </template>
 

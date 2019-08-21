@@ -186,7 +186,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .holder {
   display: flex;
   justify-content: center;
@@ -217,5 +217,29 @@ export default {
   margin: 25px auto;
   transform-origin: center top;
   position: relative;
+}
+
+.g-active {
+    outline: 1px solid #2196f3 !important;
+&:hover {
+     outline: 1px solid #2196f3 !important;
+ }
+&::after {
+     content: attr(data-title);
+     background: #2196f3;
+     color: #fff;
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 0 5px;
+     font-size: 12px;
+     border-radius: 0 0 0 4px;
+ }
+}
+
+.layer {
+  &:hover {
+    outline: 1px solid #ddd !important;
+  }
 }
 </style>

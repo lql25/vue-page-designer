@@ -44,7 +44,11 @@ export default {
   },
   computed: {
     widgets () {
-      return widget.getWidgets()
+      let widgets = widget.getWidgets()
+      delete (widgets['braid-bg'])
+      delete (widgets['braid-container'])
+      delete (widgets['braid-pic'])
+      return widgets
     },
     layers () {
       return this.$vpd.state.widgets
@@ -138,7 +142,7 @@ export default {
     }
     &.layer-active {
       color: $light-color;
-      background: $primary-color;
+      background: #409EFF;
     }
   }
 }

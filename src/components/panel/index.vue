@@ -5,14 +5,14 @@
         :class="{active: activeTab === 1}"
         class="tab-item"
         @click="activeTab = 1"><a>参数</a></li>
-      <li
-        :class="{active: activeTab === 2}"
-        class="tab-item"
-        @click="activeTab = 2"><a>交互</a></li>
-      <li
-        :class="{active: activeTab === 3}"
-        class="tab-item"
-        @click="activeTab = 3"><a>动画</a></li>
+        <!--<li-->
+        <!--:class="{active: activeTab === 2}"-->
+        <!--class="tab-item"-->
+        <!--@click="activeTab = 2"><a>交互</a></li>-->
+        <!--<li-->
+        <!--:class="{active: activeTab === 3}"-->
+        <!--class="tab-item"-->
+        <!--@click="activeTab = 3"><a>动画</a></li>-->
     </ul>
 
     <page
