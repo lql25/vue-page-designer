@@ -20,7 +20,7 @@
         <a
           class="btn btn-link tooltip tooltip-bottom"
           data-tooltip="保存 Ctrl + S"
-          @click="save"><vpd-icon name="save" /> 保存</a>
+          @click="save"><vpd-icon name="save" /> 保存1111</a>
       </section>
     </div>
   </header>
@@ -92,7 +92,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../_variables.scss';
 .header {
   background-color: #24292e;

@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../_variables.scss';
 .menu-bar {
   ul {
@@ -91,7 +91,7 @@ export default {
     margin: 0;
   }
   details {
-    padding: 10px;
+    padding: 10px 0;
   }
   summary {
     padding: 5px 0;
