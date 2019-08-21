@@ -94,7 +94,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .body {
   width: 100%;
   height: calc(100% - 54px);
