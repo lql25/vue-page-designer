@@ -2,25 +2,23 @@
   <header class="header">
     <div class="navbar container grid-xl">
       <section class="logo navbar-section">
-        <vpd-icon name="anchor" />
+        <span>自定義頁面</span>
       </section>
       <section class="navbar-section">
-        <a
-          class="btn btn-link tooltip tooltip-bottom"
-          data-tooltip="复制元件 Ctrl + C"
-          @click="copyWidget">
-          <vpd-icon name="copy" /> 复制
-        </a>
-        <a
-          class="btn btn-link tooltip tooltip-bottom"
-          data-tooltip="删除元件 Delete"
+        <!--<a-->
+        <!--class="btn btn-link tooltip tooltip-bottom"-->
+        <!--data-tooltip="複製選中組件"-->
+        <!--@click="copyWidget">-->
+        <!--<vpd-icon name="copy" /> 複製-->
+        <!--</a>-->
+        <button
+          class="navbar-btn"
           @click="dele">
-          <vpd-icon name="trash-2" /> 删除
-        </a>
-        <a
-          class="btn btn-link tooltip tooltip-bottom"
-          data-tooltip="保存 Ctrl + S"
-          @click="save"><vpd-icon name="save" /> 保存1111</a>
+          删除選中組件
+        </button>
+        <button
+          class="navbar-btn"
+          @click="save">保存</button>
       </section>
     </div>
   </header>
@@ -104,15 +102,20 @@ export default {
       vertical-align: middle;
     }
   }
-  .btn.btn-link {
-    color: $gray-color;
+  .navbar-btn {
+    background: #409EFF;
+    color: #fff;
     margin-right: 15px;
-  }
-  .btn.btn-link:hover {
-    color: $light-color;
+    cursor: pointer;
+    border-width: 0;
+    padding: 6px 15px;
+    border-radius: 3px;
   }
   .logo {
     font-size: 20px;
+    span {
+      color: #fff;
+    }
     .svg-icon {
       width: 30px;
       text-align: center;

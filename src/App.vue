@@ -1,6 +1,6 @@
 <template>
   <div class="app test">
-    <!--<navbar/>-->
+    <navbar/>
     <div class="body container grid-xl">
       <div class="columns col-gapless">
         <toolbar

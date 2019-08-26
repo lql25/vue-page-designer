@@ -18,10 +18,10 @@ export default {
   activeElement: {}, // 选中对象，要么是元件，要么是页面
   page: {
     page: true,
-    title: '测试页面', // 页面 title
+    title: '自定義頁面', // 页面 title
     height: 1500, // 画布高度
-    endTime: new Date(), // 截止日期
-    backgroundColor: '#fff'
+    // endTime: new Date(), // 截止日期
+    backgroundColor: '#ffffff'
   },
   widgets: [] // 元件
 }

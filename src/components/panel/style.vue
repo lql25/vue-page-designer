@@ -63,13 +63,13 @@
       </div>
     </div>
 
-    <!-- 组件样式 -->
-    <!--<component-->
-    <!--v-for="(item, i) in widgetStyle"-->
-    <!--v-if="item.type === activeElement.type"-->
-    <!--:is="widgetStyle[i]"-->
-    <!--:key="i"-->
-    <!--:active-element="activeElement" />-->
+    <!--组件样式 -->
+    <component
+      v-for="(item, i) in widgetStyle"
+      v-if="item.type === activeElement.type"
+      :is="widgetStyle[i]"
+      :key="i"
+      :active-element="activeElement" />
 
     <!-- 添加到容器 -->
     <div v-if="activeElement.isChild">
