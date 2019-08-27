@@ -1,5 +1,5 @@
 /**
-    * Vue-page-designer v1.0.1
+    * Vue-page-designer v1.0.3
     * (c) 2019 fireyy
     * @license WTFPL
     */
@@ -183,10 +183,10 @@
 	  activeElement: {}, // 选中对象，要么是元件，要么是页面
 	  page: {
 	    page: true,
-	    title: '测试页面', // 页面 title
-	    height: 1500, // 画布高度
-	    endTime: new Date(), // 截止日期
-	    backgroundColor: '#fff'
+	    title: '自定義頁面', // 页面 title
+	    height: 1300, // 画布高度
+	    // endTime: new Date(), // 截止日期
+	    backgroundColor: '#ffffff'
 	  },
 	  widgets: [] // 元件
 	};
@@ -659,13 +659,13 @@
 	/* script */
 	var __vue_script__ = script;
 	/* template */
-	var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"header"},[_c('div',{staticClass:"navbar container grid-xl"},[_c('section',{staticClass:"logo navbar-section"},[_c('vpd-icon',{attrs:{"name":"anchor"}})],1),_vm._v(" "),_c('section',{staticClass:"navbar-section"},[_c('a',{staticClass:"btn btn-link tooltip tooltip-bottom",attrs:{"data-tooltip":"复制元件 Ctrl + C"},on:{"click":_vm.copyWidget}},[_c('vpd-icon',{attrs:{"name":"copy"}}),_vm._v(" 复制\n      ")],1),_vm._v(" "),_c('a',{staticClass:"btn btn-link tooltip tooltip-bottom",attrs:{"data-tooltip":"删除元件 Delete"},on:{"click":_vm.dele}},[_c('vpd-icon',{attrs:{"name":"trash-2"}}),_vm._v(" 删除\n      ")],1),_vm._v(" "),_c('a',{staticClass:"btn btn-link tooltip tooltip-bottom",attrs:{"data-tooltip":"保存 Ctrl + S"},on:{"click":_vm.save}},[_c('vpd-icon',{attrs:{"name":"save"}}),_vm._v(" 保存1111")],1)])])])};
-	var __vue_staticRenderFns__ = [];
+	var __vue_render__ = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('header',{staticClass:"header"},[_c('div',{staticClass:"navbar container grid-xl"},[_vm._m(0),_vm._v(" "),_c('section',{staticClass:"navbar-section"},[_c('button',{staticClass:"navbar-btn",on:{"click":_vm.dele}},[_vm._v("\n        删除選中組件\n      ")]),_vm._v(" "),_c('button',{staticClass:"navbar-btn",on:{"click":_vm.save}},[_vm._v("保存")])])])])};
+	var __vue_staticRenderFns__ = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"logo navbar-section"},[_c('span',[_vm._v("自定義頁面")])])}];
 
 	  /* style */
 	  var __vue_inject_styles__ = undefined;
 	  /* scoped */
-	  var __vue_scope_id__ = "data-v-38ffbad0";
+	  var __vue_scope_id__ = "data-v-1691661c";
 	  /* module identifier */
 	  var __vue_module_identifier__ = undefined;
 	  /* functional template */
@@ -957,13 +957,13 @@
 	/* script */
 	var __vue_script__$3 = script$3;
 	/* template */
-	var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},[_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"layers"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("层级")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.z))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":20},model:{value:(_vm.activeElement.z),callback:function ($$v) {_vm.$set(_vm.activeElement, "z", $$v);},expression:"activeElement.z"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-horizontal"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("宽度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.width))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.width),callback:function ($$v) {_vm.$set(_vm.activeElement, "width", $$v);},expression:"activeElement.width"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-vertical"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("高度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.height))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.height),callback:function ($$v) {_vm.$set(_vm.activeElement, "height", $$v);},expression:"activeElement.height"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-right"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("横坐标")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.left))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.left),callback:function ($$v) {_vm.$set(_vm.activeElement, "left", $$v);},expression:"activeElement.left"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-down"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("纵坐标")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.top))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.top),callback:function ($$v) {_vm.$set(_vm.activeElement, "top", $$v);},expression:"activeElement.top"}})],1)],1),_vm._v(" "),(_vm.activeElement.isChild)?_c('div',[_c('hr'),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"layout"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("所属容器")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.belong),expression:"activeElement.belong"}],on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.activeElement, "belong", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);}}},[_c('option',[_vm._v("page")]),_vm._v(" "),_vm._l((_vm.containerName),function(val,index){return _c('option',{key:index},[_vm._v(_vm._s(val))])})],2)])],1)]):_vm._e()]):_vm._e()};
+	var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},[_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"layers"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("层级")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.z))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":20},model:{value:(_vm.activeElement.z),callback:function ($$v) {_vm.$set(_vm.activeElement, "z", $$v);},expression:"activeElement.z"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-horizontal"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("宽度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.width))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.width),callback:function ($$v) {_vm.$set(_vm.activeElement, "width", $$v);},expression:"activeElement.width"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-vertical"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("高度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.height))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.height),callback:function ($$v) {_vm.$set(_vm.activeElement, "height", $$v);},expression:"activeElement.height"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-right"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("横坐标")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.left))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.left),callback:function ($$v) {_vm.$set(_vm.activeElement, "left", $$v);},expression:"activeElement.left"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-down"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("纵坐标")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.top))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.top),callback:function ($$v) {_vm.$set(_vm.activeElement, "top", $$v);},expression:"activeElement.top"}})],1)],1),_vm._v(" "),_vm._l((_vm.widgetStyle),function(item,i){return (item.type === _vm.activeElement.type)?_c(_vm.widgetStyle[i],{key:i,tag:"component",attrs:{"active-element":_vm.activeElement}}):_vm._e()}),_vm._v(" "),(_vm.activeElement.isChild)?_c('div',[_c('hr'),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"layout"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("所属容器")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.belong),expression:"activeElement.belong"}],on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.$set(_vm.activeElement, "belong", $event.target.multiple ? $$selectedVal : $$selectedVal[0]);}}},[_c('option',[_vm._v("page")]),_vm._v(" "),_vm._l((_vm.containerName),function(val,index){return _c('option',{key:index},[_vm._v(_vm._s(val))])})],2)])],1)]):_vm._e()],2):_vm._e()};
 	var __vue_staticRenderFns__$3 = [];
 
 	  /* style */
 	  var __vue_inject_styles__$3 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$3 = "data-v-95a04c06";
+	  var __vue_scope_id__$3 = "data-v-9d59e076";
 	  /* module identifier */
 	  var __vue_module_identifier__$3 = undefined;
 	  /* functional template */
@@ -2295,13 +2295,13 @@
 	/* script */
 	var __vue_script__$d = script$d;
 	/* template */
-	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app test"},[_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-wrap"},[_c('vpd-slider',{attrs:{"value":_vm.zoom,"step":1,"tuning":false},on:{"input":_vm.dozoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-value"},[_vm._v(_vm._s(_vm.zoom)+"%")])],1)],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
+	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app test"},[_c('navbar'),_vm._v(" "),_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-wrap"},[_c('vpd-slider',{attrs:{"value":_vm.zoom,"step":1,"tuning":false},on:{"input":_vm.dozoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-value"},[_vm._v(_vm._s(_vm.zoom)+"%")])],1)],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
 	var __vue_staticRenderFns__$d = [];
 
 	  /* style */
 	  var __vue_inject_styles__$d = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$d = "data-v-fc750efc";
+	  var __vue_scope_id__$d = "data-v-68ef0047";
 	  /* module identifier */
 	  var __vue_module_identifier__$d = undefined;
 	  /* functional template */

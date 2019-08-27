@@ -63,6 +63,23 @@
       </div>
     </div>
 
+    <!-- 添加到容器 -->
+    <!--<div v-if="activeElement.isChild">-->
+    <!--<hr>-->
+    <!--<div class="panel-row">-->
+    <!--<vpd-icon name="layout" />-->
+    <!--<div class="panel-label">所属容器</div>-->
+    <!--<div class="panel-value">-->
+    <!--<select v-model="activeElement.belong">-->
+    <!--<option>page</option>-->
+    <!--<option-->
+    <!--v-for="(val, index) in containerName"-->
+    <!--:key="index">{{ val }}</option>-->
+    <!--</select>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
     <!--组件样式 -->
     <component
       v-for="(item, i) in widgetStyle"
@@ -71,22 +88,6 @@
       :key="i"
       :active-element="activeElement" />
 
-    <!-- 添加到容器 -->
-    <div v-if="activeElement.isChild">
-      <hr>
-      <div class="panel-row">
-        <vpd-icon name="layout" />
-        <div class="panel-label">所属容器</div>
-        <div class="panel-value">
-          <select v-model="activeElement.belong">
-            <option>page</option>
-            <option
-              v-for="(val, index) in containerName"
-              :key="index">{{ val }}</option>
-          </select>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 

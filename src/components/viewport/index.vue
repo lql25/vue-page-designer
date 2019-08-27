@@ -143,6 +143,7 @@ export default {
 
   methods: {
     handleSelection (e) {
+      console.log(e)
       var target = e.target
       var type = target.getAttribute('data-type')
 

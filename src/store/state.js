@@ -19,7 +19,7 @@ export default {
   page: {
     page: true,
     title: '自定義頁面', // 页面 title
-    height: 1500, // 画布高度
+    height: 1300, // 画布高度
     // endTime: new Date(), // 截止日期
     backgroundColor: '#ffffff'
   },
