@@ -89,6 +89,12 @@ export default {
   methods: {
     dozoom (val) {
       this.$vpd.commit('zoom', val)
+    },
+    changeActiveElement (uuid) {
+      // 设置选中元素
+      this.$vpd.commit('select', {
+        uuid: uuid || -1
+      })
     }
   }
 }
