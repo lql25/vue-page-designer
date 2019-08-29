@@ -6,7 +6,7 @@
       class="panel-row"
       flex>
       <vpd-icon name="type" />
-      <div class="panel-label">页面标题</div>
+      <div class="panel-label">页面名称</div>
       <div class="panel-value">
         <input
           v-model="activeElement.title"

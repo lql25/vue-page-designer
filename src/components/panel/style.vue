@@ -2,10 +2,10 @@
   <div
     v-if="!activeElement.page && tab === 1"
     class="panel-wrap">
-    <!-- 公共属性 -->
+    <!-- 公共屬性 -->
     <div class="panel-row">
       <vpd-icon name="layers" />
-      <div class="panel-label">层级</div>
+      <div class="panel-label">層級</div>
       <div class="panel-value">{{ activeElement.z }}</div>
       <div class="panel-slider-wrap">
         <vpd-slider
@@ -17,7 +17,7 @@
 
     <div class="panel-row">
       <vpd-icon name="more-horizontal" />
-      <div class="panel-label">宽度</div>
+      <div class="panel-label">寬度</div>
       <div class="panel-value">{{ activeElement.width }}</div>
       <div class="panel-slider-wrap">
         <vpd-slider
@@ -41,7 +41,7 @@
 
     <div class="panel-row">
       <vpd-icon name="arrow-right" />
-      <div class="panel-label">横坐标</div>
+      <div class="panel-label">橫坐標</div>
       <div class="panel-value">{{ activeElement.left }}</div>
       <div class="panel-slider-wrap">
         <vpd-slider
@@ -53,7 +53,7 @@
 
     <div class="panel-row">
       <vpd-icon name="arrow-down" />
-      <div class="panel-label">纵坐标</div>
+      <div class="panel-label">縱坐標</div>
       <div class="panel-value">{{ activeElement.top }}</div>
       <div class="panel-slider-wrap">
         <vpd-slider
@@ -68,7 +68,7 @@
     <!--<hr>-->
     <!--<div class="panel-row">-->
     <!--<vpd-icon name="layout" />-->
-    <!--<div class="panel-label">所属容器</div>-->
+    <!--<div class="panel-label">所屬容器</div>-->
     <!--<div class="panel-value">-->
     <!--<select v-model="activeElement.belong">-->
     <!--<option>page</option>-->
@@ -80,7 +80,7 @@
     <!--</div>-->
     <!--</div>-->
 
-    <!--组件样式 -->
+    <!--組件樣式 -->
     <component
       v-for="(item, i) in widgetStyle"
       v-if="item.type === activeElement.type"
@@ -107,12 +107,12 @@ export default {
     widgetStyle () {
       return widget.getWidgetStyle()
     },
-    // 页面高度
+    // 頁面高度
     height () {
       return this.$vpd.state.page.height
     },
 
-    // 容器名称
+    // 容器名稱
     containerName () {
       var arr = []
       this.$vpd.state.widgets.map(

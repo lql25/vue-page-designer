@@ -13,9 +13,10 @@
         <!--</a>-->
         <button
           class="navbar-btn"
-          @click="dele">
-          删除選中組件
-        </button>
+          @click="dele">删除選中組件</button>
+        <button
+          class="navbar-btn"
+          @click="preview">預覽</button>
         <button
           class="navbar-btn"
           @click="save">保存</button>
@@ -75,6 +76,11 @@ export default {
     // 保存
     save () {
       this.$vpd.dispatch('save')
+    },
+
+    // 預覽
+    preview () {
+      this.$vpd.dispatch('preview')
     },
 
     // 复制元件

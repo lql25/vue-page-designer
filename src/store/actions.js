@@ -14,5 +14,8 @@ export default {
   },
   save ({ state, store }) {
     store.$emit('save', state)
+  },
+  preview ({ state, store }) {
+    store.$emit('preview', state)
   }
 }

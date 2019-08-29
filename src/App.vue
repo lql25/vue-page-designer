@@ -80,6 +80,9 @@ export default {
     this.$vpd.$on('save', () => {
       this.$emit('save', this.$vpd.state)
     })
+    this.$vpd.$on('preview', () => {
+      this.$emit('preview')
+    })
   },
   mounted () {
     // 初始化选中元件（将页面作为初始选中元件）

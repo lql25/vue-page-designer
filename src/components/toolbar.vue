@@ -60,6 +60,16 @@ export default {
   methods: {
     // 添加组件
     addWidget (e, item) {
+      console.log(item)
+      console.log(this.layers)
+      if (item.name === 'braid-top-bar' || item.name === 'braid-bottom-bar' || item.name === 'braid-browser') {
+        const res = this.layers.find(i => {
+          return i.type === item.name
+        })
+        if (res) {
+          return
+        }
+      }
       this.$vpd.dispatch('addWidget', item)
     },
 
