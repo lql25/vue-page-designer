@@ -81,7 +81,7 @@ export default {
       this.$emit('save', this.$vpd.state)
     })
     this.$vpd.$on('preview', () => {
-      this.$emit('preview')
+      this.$emit('preview', this.$vpd.state)
     })
   },
   mounted () {

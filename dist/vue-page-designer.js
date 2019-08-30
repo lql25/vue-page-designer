@@ -676,7 +676,7 @@
 	  /* style */
 	  var __vue_inject_styles__ = undefined;
 	  /* scoped */
-	  var __vue_scope_id__ = "data-v-05b13bf2";
+	  var __vue_scope_id__ = "data-v-4e79a04c";
 	  /* module identifier */
 	  var __vue_module_identifier__ = undefined;
 	  /* functional template */
@@ -832,7 +832,7 @@
 	  /* style */
 	  var __vue_inject_styles__$1 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$1 = "data-v-463419a4";
+	  var __vue_scope_id__$1 = "data-v-8299d76e";
 	  /* module identifier */
 	  var __vue_module_identifier__$1 = undefined;
 	  /* functional template */
@@ -922,7 +922,7 @@
 	  /* style */
 	  var __vue_inject_styles__$2 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$2 = "data-v-1c441c30";
+	  var __vue_scope_id__$2 = "data-v-6fa3fcf8";
 	  /* module identifier */
 	  var __vue_module_identifier__$2 = undefined;
 	  /* functional template */
@@ -984,7 +984,7 @@
 	  /* style */
 	  var __vue_inject_styles__$3 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$3 = "data-v-489911e2";
+	  var __vue_scope_id__$3 = "data-v-77ccb530";
 	  /* module identifier */
 	  var __vue_module_identifier__$3 = undefined;
 	  /* functional template */
@@ -1258,7 +1258,7 @@
 	  /* style */
 	  var __vue_inject_styles__$5 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$5 = "data-v-fb8fe35e";
+	  var __vue_scope_id__$5 = "data-v-4c9ae232";
 	  /* module identifier */
 	  var __vue_module_identifier__$5 = undefined;
 	  /* functional template */
@@ -1314,7 +1314,7 @@
 	  /* style */
 	  var __vue_inject_styles__$6 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$6 = "data-v-6a0cf2be";
+	  var __vue_scope_id__$6 = "data-v-b55d7bdc";
 	  /* module identifier */
 	  var __vue_module_identifier__$6 = undefined;
 	  /* functional template */
@@ -1466,7 +1466,7 @@
 	  /* style */
 	  var __vue_inject_styles__$7 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$7 = "data-v-732b1964";
+	  var __vue_scope_id__$7 = "data-v-1beb902a";
 	  /* module identifier */
 	  var __vue_module_identifier__$7 = undefined;
 	  /* functional template */
@@ -1565,7 +1565,7 @@
 	  /* style */
 	  var __vue_inject_styles__$8 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$8 = "data-v-0c708f2d";
+	  var __vue_scope_id__$8 = "data-v-522a8fa8";
 	  /* module identifier */
 	  var __vue_module_identifier__$8 = undefined;
 	  /* functional template */
@@ -1737,7 +1737,7 @@
 	  /* style */
 	  var __vue_inject_styles__$9 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$9 = "data-v-2a461ef8";
+	  var __vue_scope_id__$9 = "data-v-d060a6d8";
 	  /* module identifier */
 	  var __vue_module_identifier__$9 = undefined;
 	  /* functional template */
@@ -1840,7 +1840,7 @@
 	  /* style */
 	  var __vue_inject_styles__$a = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$a = "data-v-4b68d900";
+	  var __vue_scope_id__$a = "data-v-db1d0c56";
 	  /* module identifier */
 	  var __vue_module_identifier__$a = undefined;
 	  /* functional template */
@@ -2238,7 +2238,7 @@
 	  /* style */
 	  var __vue_inject_styles__$c = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$c = "data-v-6bc628c1";
+	  var __vue_scope_id__$c = "data-v-4bc83544";
 	  /* module identifier */
 	  var __vue_module_identifier__$c = undefined;
 	  /* functional template */
@@ -2302,7 +2302,7 @@
 	      this$1.$emit('save', this$1.$vpd.state);
 	    });
 	    this.$vpd.$on('preview', function () {
-	      this$1.$emit('preview');
+	      this$1.$emit('preview', this$1.$vpd.state);
 	    });
 	  },
 	  mounted: function mounted () {
@@ -2332,7 +2332,7 @@
 	  /* style */
 	  var __vue_inject_styles__$d = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$d = "data-v-50a96482";
+	  var __vue_scope_id__$d = "data-v-1858513f";
 	  /* module identifier */
 	  var __vue_module_identifier__$d = undefined;
 	  /* functional template */
@@ -2391,7 +2391,7 @@
 	  /* style */
 	  var __vue_inject_styles__$e = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$e = "data-v-d3004e2e";
+	  var __vue_scope_id__$e = "data-v-24edaffe";
 	  /* module identifier */
 	  var __vue_module_identifier__$e = undefined;
 	  /* functional template */
