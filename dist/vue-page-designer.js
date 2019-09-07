@@ -1,5 +1,5 @@
 /**
-    * Vue-page-designer v1.0.3
+    * Vue-page-designer v1.0.4
     * (c) 2019 fireyy
     * @license WTFPL
     */
@@ -184,7 +184,7 @@
 	  page: {
 	    page: true,
 	    title: '自定義頁面', // 页面 title
-	    height: 1300, // 画布高度
+	    height: 1100, // 画布高度
 	    // endTime: new Date(), // 截止日期
 	    backgroundColor: '#ffffff'
 	  },
@@ -228,12 +228,15 @@
 	var mutations = {
 	  // 选中元件与取消选中
 	  select: function select (state, payload) {
+	    console.log(state);
+	    console.log(payload);
 	    state.uuid = payload.uuid;
 	    if (payload.uuid === -1) {
 	      state.activeElement = state.page;
 	      state.type = 'page';
 	    } else {
 	      var widget = state.widgets.find(function (w) { return w.uuid === payload.uuid; });
+	      console.log(widget);
 	      state.activeElement = widget;
 	      state.type = widget.type;
 	    }
@@ -346,6 +349,7 @@
 
 	  // 删除选中元件
 	  delete: function delete$1 (state) {
+	    console.log(state);
 	    var type = state.type;
 	    if (type === 'page') { return }
 
@@ -361,7 +365,11 @@
 	    }
 
 	    // 删除元件
-	    state.widgets.splice(state.index, 1);
+	    // state.widgets.splice(state.index, 1)
+	    var widgetIndex = state.widgets.findIndex(function (item) {
+	      return item.uuid === state.uuid
+	    });
+	    state.widgets.splice(widgetIndex, 1);
 
 	    // 重置 activeElement
 	    state.activeElement = state.page;
@@ -2326,13 +2334,13 @@
 	/* script */
 	var __vue_script__$d = script$d;
 	/* template */
-	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app test"},[_c('navbar'),_vm._v(" "),_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-wrap"},[_c('vpd-slider',{attrs:{"value":_vm.zoom,"step":1,"tuning":false},on:{"input":_vm.dozoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-value"},[_vm._v(_vm._s(_vm.zoom)+"%")])],1)],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
+	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app page-design-wrap"},[_c('navbar'),_vm._v(" "),_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-wrap"},[_c('vpd-slider',{attrs:{"value":_vm.zoom,"step":1,"tuning":false},on:{"input":_vm.dozoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-value"},[_vm._v(_vm._s(_vm.zoom)+"%")])],1)],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
 	var __vue_staticRenderFns__$d = [];
 
 	  /* style */
 	  var __vue_inject_styles__$d = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$d = "data-v-1858513f";
+	  var __vue_scope_id__$d = "data-v-762a5f94";
 	  /* module identifier */
 	  var __vue_module_identifier__$d = undefined;
 	  /* functional template */

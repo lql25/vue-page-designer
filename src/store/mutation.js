@@ -136,7 +136,11 @@ export default {
     }
 
     // 删除元件
-    state.widgets.splice(state.index, 1)
+    // state.widgets.splice(state.index, 1)
+    const widgetIndex = state.widgets.findIndex((item) => {
+      return item.uuid === state.uuid
+    })
+    state.widgets.splice(widgetIndex, 1)
 
     // 重置 activeElement
     state.activeElement = state.page

@@ -1,5 +1,5 @@
 <template>
-  <div class="app test">
+  <div class="app page-design-wrap">
     <navbar/>
     <div class="body container grid-xl">
       <div class="columns col-gapless">
