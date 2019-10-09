@@ -48,16 +48,16 @@ export default {
     )
 
     // Delete 删除选中元件
-    document.addEventListener(
-      'keyup',
-      e => {
-        e.stopPropagation()
-        if (e.keyCode === 46) {
-          this.dele()
-        }
-      },
-      true
-    )
+    // document.addEventListener(
+    //   'keyup',
+    //   e => {
+    //     e.stopPropagation()
+    //     if (e.keyCode === 46) {
+    //       this.dele()
+    //     }
+    //   },
+    //   true
+    // )
 
     // Ctrl + S 保存
     document.addEventListener(
