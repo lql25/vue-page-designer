@@ -1,6 +1,6 @@
 {
   "name": "lifebag-vue-page-designer",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A vue component for drag-and-drop to design and build mobile website.",
   "repository": {
     "url": "liqilong/vue-page-designer",
