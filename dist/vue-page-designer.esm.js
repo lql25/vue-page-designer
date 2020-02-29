@@ -1,6 +1,6 @@
 /**
-    * Vue-page-designer v1.0.4
-    * (c) 2019 fireyy
+    * Vue-page-designer v1.0.7
+    * (c) 2020 fireyy
     * @license WTFPL
     */
 import Vue from 'vue';
@@ -159,7 +159,7 @@ Object.defineProperties( Store.prototype, prototypeAccessors );
 
 var state = {
   top: 0, // 添加元件的初始纵坐标
-  zoom: 64, // 画布缩放百分比
+  zoom: 67, // 画布缩放百分比
   type: 'page', // 选中元素类型
   index: -1, // 选中元素索引
   uuid: null, // 选中元素uuid
@@ -222,15 +222,12 @@ var generate = require('nanoid/generate');
 var mutations = {
   // 选中元件与取消选中
   select: function select (state, payload) {
-    console.log(state);
-    console.log(payload);
     state.uuid = payload.uuid;
     if (payload.uuid === -1) {
       state.activeElement = state.page;
       state.type = 'page';
     } else {
       var widget = state.widgets.find(function (w) { return w.uuid === payload.uuid; });
-      console.log(widget);
       state.activeElement = widget;
       state.type = widget.type;
     }
@@ -343,7 +340,6 @@ var mutations = {
 
   // 删除选中元件
   delete: function delete$1 (state) {
-    console.log(state);
     var type = state.type;
     if (type === 'page') { return }
 
@@ -537,16 +533,16 @@ var script = {
     );
 
     // Delete 删除选中元件
-    document.addEventListener(
-      'keyup',
-      function (e) {
-        e.stopPropagation();
-        if (e.keyCode === 46) {
-          this$1.dele();
-        }
-      },
-      true
-    );
+    // document.addEventListener(
+    //   'keyup',
+    //   e => {
+    //     e.stopPropagation()
+    //     if (e.keyCode === 46) {
+    //       this.dele()
+    //     }
+    //   },
+    //   true
+    // )
 
     // Ctrl + S 保存
     document.addEventListener(
@@ -678,7 +674,7 @@ var __vue_staticRenderFns__ = [function () {var _vm=this;var _h=_vm.$createEleme
   /* style */
   var __vue_inject_styles__ = undefined;
   /* scoped */
-  var __vue_scope_id__ = "data-v-4e79a04c";
+  var __vue_scope_id__ = "data-v-cfc10c52";
   /* module identifier */
   var __vue_module_identifier__ = undefined;
   /* functional template */
@@ -834,7 +830,7 @@ var __vue_staticRenderFns__$1 = [];
   /* style */
   var __vue_inject_styles__$1 = undefined;
   /* scoped */
-  var __vue_scope_id__$1 = "data-v-8299d76e";
+  var __vue_scope_id__$1 = "data-v-463419a4";
   /* module identifier */
   var __vue_module_identifier__$1 = undefined;
   /* functional template */
@@ -924,7 +920,7 @@ var __vue_staticRenderFns__$2 = [];
   /* style */
   var __vue_inject_styles__$2 = undefined;
   /* scoped */
-  var __vue_scope_id__$2 = "data-v-6fa3fcf8";
+  var __vue_scope_id__$2 = "data-v-1c441c30";
   /* module identifier */
   var __vue_module_identifier__$2 = undefined;
   /* functional template */
@@ -986,7 +982,7 @@ var __vue_staticRenderFns__$3 = [];
   /* style */
   var __vue_inject_styles__$3 = undefined;
   /* scoped */
-  var __vue_scope_id__$3 = "data-v-77ccb530";
+  var __vue_scope_id__$3 = "data-v-489911e2";
   /* module identifier */
   var __vue_module_identifier__$3 = undefined;
   /* functional template */
@@ -1260,7 +1256,7 @@ var __vue_staticRenderFns__$5 = [];
   /* style */
   var __vue_inject_styles__$5 = undefined;
   /* scoped */
-  var __vue_scope_id__$5 = "data-v-4c9ae232";
+  var __vue_scope_id__$5 = "data-v-fb8fe35e";
   /* module identifier */
   var __vue_module_identifier__$5 = undefined;
   /* functional template */
@@ -1316,7 +1312,7 @@ var __vue_staticRenderFns__$6 = [];
   /* style */
   var __vue_inject_styles__$6 = undefined;
   /* scoped */
-  var __vue_scope_id__$6 = "data-v-b55d7bdc";
+  var __vue_scope_id__$6 = "data-v-6a0cf2be";
   /* module identifier */
   var __vue_module_identifier__$6 = undefined;
   /* functional template */
@@ -1468,7 +1464,7 @@ var __vue_staticRenderFns__$7 = [];
   /* style */
   var __vue_inject_styles__$7 = undefined;
   /* scoped */
-  var __vue_scope_id__$7 = "data-v-1beb902a";
+  var __vue_scope_id__$7 = "data-v-732b1964";
   /* module identifier */
   var __vue_module_identifier__$7 = undefined;
   /* functional template */
@@ -1567,7 +1563,7 @@ var __vue_staticRenderFns__$8 = [];
   /* style */
   var __vue_inject_styles__$8 = undefined;
   /* scoped */
-  var __vue_scope_id__$8 = "data-v-522a8fa8";
+  var __vue_scope_id__$8 = "data-v-0c708f2d";
   /* module identifier */
   var __vue_module_identifier__$8 = undefined;
   /* functional template */
@@ -1739,7 +1735,7 @@ var __vue_staticRenderFns__$9 = [];
   /* style */
   var __vue_inject_styles__$9 = undefined;
   /* scoped */
-  var __vue_scope_id__$9 = "data-v-d060a6d8";
+  var __vue_scope_id__$9 = "data-v-2a461ef8";
   /* module identifier */
   var __vue_module_identifier__$9 = undefined;
   /* functional template */
@@ -1842,7 +1838,7 @@ var __vue_staticRenderFns__$a = [];
   /* style */
   var __vue_inject_styles__$a = undefined;
   /* scoped */
-  var __vue_scope_id__$a = "data-v-db1d0c56";
+  var __vue_scope_id__$a = "data-v-4b68d900";
   /* module identifier */
   var __vue_module_identifier__$a = undefined;
   /* functional template */
@@ -2240,7 +2236,7 @@ var __vue_staticRenderFns__$c = [];
   /* style */
   var __vue_inject_styles__$c = undefined;
   /* scoped */
-  var __vue_scope_id__$c = "data-v-4bc83544";
+  var __vue_scope_id__$c = "data-v-6bc628c1";
   /* module identifier */
   var __vue_module_identifier__$c = undefined;
   /* functional template */
@@ -2334,7 +2330,7 @@ var __vue_staticRenderFns__$d = [];
   /* style */
   var __vue_inject_styles__$d = undefined;
   /* scoped */
-  var __vue_scope_id__$d = "data-v-762a5f94";
+  var __vue_scope_id__$d = "data-v-0a4ac68e";
   /* module identifier */
   var __vue_module_identifier__$d = undefined;
   /* functional template */
@@ -2393,7 +2389,7 @@ var __vue_staticRenderFns__$e = [];
   /* style */
   var __vue_inject_styles__$e = undefined;
   /* scoped */
-  var __vue_scope_id__$e = "data-v-24edaffe";
+  var __vue_scope_id__$e = "data-v-d3004e2e";
   /* module identifier */
   var __vue_module_identifier__$e = undefined;
   /* functional template */
