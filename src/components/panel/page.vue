@@ -13,30 +13,42 @@
           type="text">
       </div>
     </div>
-
     <div
-      class="panel-row"
-      flex>
-      <vpd-icon name="smartphone" />
-      <div class="panel-label">页面高度</div>
+            class="panel-row"
+            flex>
+      <vpd-icon name="type" />
+      <div class="panel-label">页面访问路径名</div>
       <div class="panel-value">
         <input
-          v-model="activeElement.height"
-          type="text">
+                v-model="activeElement.pageName"
+                placeholder="请输入英文，如test"
+                type="text">
       </div>
     </div>
 
-    <div
-      class="panel-row"
-      flex>
-      <vpd-icon name="droplet" />
-      <div class="panel-label">页面背景色</div>
-      <div class="panel-value">
-        <input
-          v-model="activeElement.backgroundColor"
-          type="color">
-      </div>
-    </div>
+    <!--<div-->
+      <!--class="panel-row"-->
+      <!--flex>-->
+      <!--<vpd-icon name="smartphone" />-->
+      <!--<div class="panel-label">页面高度</div>-->
+      <!--<div class="panel-value">-->
+        <!--<input-->
+          <!--v-model="activeElement.height"-->
+          <!--type="text">-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div-->
+      <!--class="panel-row"-->
+      <!--flex>-->
+      <!--<vpd-icon name="droplet" />-->
+      <!--<div class="panel-label">页面背景色</div>-->
+      <!--<div class="panel-value">-->
+        <!--<input-->
+          <!--v-model="activeElement.backgroundColor"-->
+          <!--type="color">-->
+      <!--</div>-->
+    <!--</div>-->
 
     <!--<div-->
     <!--class="panel-row"-->
