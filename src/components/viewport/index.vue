@@ -20,7 +20,7 @@
         :key="val.uuid"
         :val="val"
         :h="height"
-        :w="750"
+        :w="700"
         :data-type="val.type"
         :data-uuid="val.uuid"
         :play-state="playState"
@@ -33,7 +33,7 @@
           :key="child.uuid"
           :val="child"
           :h="height"
-          :w="750"
+          :w="700"
           :data-type="child.type"
           :data-uuid="child.uuid"
           :play-state="playState"
@@ -214,7 +214,7 @@ export default {
   background-size: 26px 26px;
 }
 .screen {
-  width: 750px;
+  width: 700px;
   margin: 25px auto;
   transform-origin: center top;
   position: relative;

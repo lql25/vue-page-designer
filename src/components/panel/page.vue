@@ -17,7 +17,7 @@
             class="panel-row"
             flex>
       <vpd-icon name="type" />
-      <div class="panel-label">页面访问路径名</div>
+      <div class="panel-label">页面路径</div>
       <div class="panel-value">
         <input
                 v-model="activeElement.pageName"

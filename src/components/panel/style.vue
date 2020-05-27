@@ -47,7 +47,7 @@
         <vpd-slider
           v-model="activeElement.left"
           :step="1"
-          :max="750" />
+          :max="700" />
       </div>
     </div>
 

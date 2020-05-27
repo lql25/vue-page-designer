@@ -156,6 +156,9 @@ export default {
     if (setting.isContainer) {
       setting.name = def.uuid
     }
+    if (['braid-top-bar', 'braid-bottom-bar', 'braid-browser'].indexOf(setting.type) === -1) {
+      def.top = 40
+    }
 
     if (data) {
       data.forEach(function (val) {
