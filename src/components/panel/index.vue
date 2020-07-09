@@ -82,6 +82,7 @@ export default {
 }
 .panel-row {
   display: flex;
+  align-items: center;
   font-size: 13px;
   line-height: 36px;
 }

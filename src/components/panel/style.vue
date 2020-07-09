@@ -3,65 +3,65 @@
     v-if="!activeElement.page && tab === 1"
     class="panel-wrap">
     <!-- 公共屬性 -->
-    <div class="panel-row">
-      <vpd-icon name="layers" />
-      <div class="panel-label">層級</div>
-      <div class="panel-value">{{ activeElement.z }}</div>
-      <div class="panel-slider-wrap">
-        <vpd-slider
-          v-model="activeElement.z"
-          :step="1"
-          :max="20" />
-      </div>
-    </div>
+    <!--<div class="panel-row">-->
+      <!--<vpd-icon name="layers" />-->
+      <!--<div class="panel-label">層級</div>-->
+      <!--<div class="panel-value">{{ activeElement.z }}</div>-->
+      <!--<div class="panel-slider-wrap">-->
+        <!--<vpd-slider-->
+          <!--v-model="activeElement.z"-->
+          <!--:step="1"-->
+          <!--:max="20" />-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <div class="panel-row">
-      <vpd-icon name="more-horizontal" />
-      <div class="panel-label">寬度</div>
-      <div class="panel-value">{{ activeElement.width }}</div>
-      <div class="panel-slider-wrap">
-        <vpd-slider
-          v-model="activeElement.width"
-          :step="1"
-          :max="700" />
-      </div>
-    </div>
+    <!--<div class="panel-row">-->
+      <!--<vpd-icon name="more-horizontal" />-->
+      <!--<div class="panel-label">寬度</div>-->
+      <!--<div class="panel-value">{{ activeElement.width }}</div>-->
+      <!--<div class="panel-slider-wrap">-->
+        <!--<vpd-slider-->
+          <!--v-model="activeElement.width"-->
+          <!--:step="1"-->
+          <!--:max="700" />-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <div class="panel-row">
-      <vpd-icon name="more-vertical" />
-      <div class="panel-label">高度</div>
-      <div class="panel-value">{{ activeElement.height }}</div>
-      <div class="panel-slider-wrap">
-        <vpd-slider
-          v-model="activeElement.height"
-          :step="1"
-          :max="height" />
-      </div>
-    </div>
+    <!--<div class="panel-row">-->
+      <!--<vpd-icon name="more-vertical" />-->
+      <!--<div class="panel-label">高度</div>-->
+      <!--<div class="panel-value">{{ activeElement.height }}</div>-->
+      <!--<div class="panel-slider-wrap">-->
+        <!--<vpd-slider-->
+          <!--v-model="activeElement.height"-->
+          <!--:step="1"-->
+          <!--:max="height" />-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <div class="panel-row">
-      <vpd-icon name="arrow-right" />
-      <div class="panel-label">橫坐標</div>
-      <div class="panel-value">{{ activeElement.left }}</div>
-      <div class="panel-slider-wrap">
-        <vpd-slider
-          v-model="activeElement.left"
-          :step="1"
-          :max="750" />
-      </div>
-    </div>
+    <!--<div class="panel-row">-->
+      <!--<vpd-icon name="arrow-right" />-->
+      <!--<div class="panel-label">橫坐標</div>-->
+      <!--<div class="panel-value">{{ activeElement.left }}</div>-->
+      <!--<div class="panel-slider-wrap">-->
+        <!--<vpd-slider-->
+          <!--v-model="activeElement.left"-->
+          <!--:step="1"-->
+          <!--:max="750" />-->
+      <!--</div>-->
+    <!--</div>-->
 
-    <div class="panel-row">
-      <vpd-icon name="arrow-down" />
-      <div class="panel-label">縱坐標</div>
-      <div class="panel-value">{{ activeElement.top }}</div>
-      <div class="panel-slider-wrap">
-        <vpd-slider
-          v-model="activeElement.top"
-          :step="1"
-          :max="height" />
-      </div>
-    </div>
+    <!--<div class="panel-row">-->
+      <!--<vpd-icon name="arrow-down" />-->
+      <!--<div class="panel-label">縱坐標</div>-->
+      <!--<div class="panel-value">{{ activeElement.top }}</div>-->
+      <!--<div class="panel-slider-wrap">-->
+        <!--<vpd-slider-->
+          <!--v-model="activeElement.top"-->
+          <!--:step="1"-->
+          <!--:max="height" />-->
+      <!--</div>-->
+    <!--</div>-->
 
     <!-- 添加到容器 -->
     <!--<div v-if="activeElement.isChild">-->

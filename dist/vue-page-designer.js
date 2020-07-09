@@ -165,7 +165,7 @@
 
 	var state = {
 	  top: 0, // 添加元件的初始纵坐标
-	  zoom: 67, // 画布缩放百分比
+	  zoom: 100, // 画布缩放百分比
 	  type: 'page', // 选中元素类型
 	  index: -1, // 选中元素索引
 	  uuid: null, // 选中元素uuid
@@ -680,7 +680,7 @@
 	  /* style */
 	  var __vue_inject_styles__ = undefined;
 	  /* scoped */
-	  var __vue_scope_id__ = "data-v-cfc10c52";
+	  var __vue_scope_id__ = "data-v-455cc140";
 	  /* module identifier */
 	  var __vue_module_identifier__ = undefined;
 	  /* functional template */
@@ -793,14 +793,15 @@
 	    addWidget: function addWidget (e, item) {
 	      console.log(item);
 	      console.log(this.layers);
-	      if (item.name === 'braid-top-bar' || item.name === 'braid-bottom-bar' || item.name === 'braid-browser') {
-	        var res = this.layers.find(function (i) {
-	          return i.type === item.name
-	        });
-	        if (res) {
-	          return
+	        if (item.name === 'fixedContainer') {
+	            var res = this.layers.find(function (i) {
+	                return i.type === item.name
+	            });
+	            if (res) {
+	                alert('已经存在一个固定容器');
+	                return
+	            }
 	        }
-	      }
 	      this.$vpd.dispatch('addWidget', item);
 	    },
 
@@ -836,7 +837,7 @@
 	  /* style */
 	  var __vue_inject_styles__$1 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$1 = "data-v-463419a4";
+	  var __vue_scope_id__$1 = "data-v-09c2f166";
 	  /* module identifier */
 	  var __vue_module_identifier__$1 = undefined;
 	  /* functional template */
@@ -912,6 +913,18 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	var script$2 = {
 	  props: ['activeElement', 'tab']
@@ -920,13 +933,13 @@
 	/* script */
 	var __vue_script__$2 = script$2;
 	/* template */
-	var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},[_c('div',{staticClass:"panel-row",attrs:{"flex":""}},[_c('vpd-icon',{attrs:{"name":"type"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("页面名称")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.title),expression:"activeElement.title"}],attrs:{"type":"text"},domProps:{"value":(_vm.activeElement.title)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.activeElement, "title", $event.target.value);}}})])],1),_vm._v(" "),_c('div',{staticClass:"panel-row",attrs:{"flex":""}},[_c('vpd-icon',{attrs:{"name":"smartphone"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("页面高度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.height),expression:"activeElement.height"}],attrs:{"type":"text"},domProps:{"value":(_vm.activeElement.height)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.activeElement, "height", $event.target.value);}}})])],1),_vm._v(" "),_c('div',{staticClass:"panel-row",attrs:{"flex":""}},[_c('vpd-icon',{attrs:{"name":"droplet"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("页面背景色")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.backgroundColor),expression:"activeElement.backgroundColor"}],attrs:{"type":"color"},domProps:{"value":(_vm.activeElement.backgroundColor)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.activeElement, "backgroundColor", $event.target.value);}}})])],1)]):_vm._e()};
+	var __vue_render__$2 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},[_c('div',{staticClass:"panel-row",attrs:{"flex":""}},[_c('vpd-icon',{attrs:{"name":"type"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("页面名称")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.title),expression:"activeElement.title"}],attrs:{"type":"text"},domProps:{"value":(_vm.activeElement.title)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.activeElement, "title", $event.target.value);}}})])],1),_vm._v(" "),_c('div',{staticClass:"panel-row",attrs:{"flex":""}},[_c('vpd-icon',{attrs:{"name":"type"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("页面访问路径名")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.activeElement.pageName),expression:"activeElement.pageName"}],attrs:{"placeholder":"请输入英文，如test","type":"text"},domProps:{"value":(_vm.activeElement.pageName)},on:{"input":function($event){if($event.target.composing){ return; }_vm.$set(_vm.activeElement, "pageName", $event.target.value);}}})])],1)]):_vm._e()};
 	var __vue_staticRenderFns__$2 = [];
 
 	  /* style */
 	  var __vue_inject_styles__$2 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$2 = "data-v-1c441c30";
+	  var __vue_scope_id__$2 = "data-v-428466e6";
 	  /* module identifier */
 	  var __vue_module_identifier__$2 = undefined;
 	  /* functional template */
@@ -982,13 +995,13 @@
 	/* script */
 	var __vue_script__$3 = script$3;
 	/* template */
-	var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},[_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"layers"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("層級")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.z))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":20},model:{value:(_vm.activeElement.z),callback:function ($$v) {_vm.$set(_vm.activeElement, "z", $$v);},expression:"activeElement.z"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-horizontal"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("寬度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.width))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.width),callback:function ($$v) {_vm.$set(_vm.activeElement, "width", $$v);},expression:"activeElement.width"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"more-vertical"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("高度")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.height))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.height),callback:function ($$v) {_vm.$set(_vm.activeElement, "height", $$v);},expression:"activeElement.height"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-right"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("橫坐標")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.left))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":750},model:{value:(_vm.activeElement.left),callback:function ($$v) {_vm.$set(_vm.activeElement, "left", $$v);},expression:"activeElement.left"}})],1)],1),_vm._v(" "),_c('div',{staticClass:"panel-row"},[_c('vpd-icon',{attrs:{"name":"arrow-down"}}),_vm._v(" "),_c('div',{staticClass:"panel-label"},[_vm._v("縱坐標")]),_vm._v(" "),_c('div',{staticClass:"panel-value"},[_vm._v(_vm._s(_vm.activeElement.top))]),_vm._v(" "),_c('div',{staticClass:"panel-slider-wrap"},[_c('vpd-slider',{attrs:{"step":1,"max":_vm.height},model:{value:(_vm.activeElement.top),callback:function ($$v) {_vm.$set(_vm.activeElement, "top", $$v);},expression:"activeElement.top"}})],1)],1),_vm._v(" "),_vm._l((_vm.widgetStyle),function(item,i){return (item.type === _vm.activeElement.type)?_c(_vm.widgetStyle[i],{key:i,tag:"component",attrs:{"active-element":_vm.activeElement}}):_vm._e()})],2):_vm._e()};
+	var __vue_render__$3 = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (!_vm.activeElement.page && _vm.tab === 1)?_c('div',{staticClass:"panel-wrap"},_vm._l((_vm.widgetStyle),function(item,i){return (item.type === _vm.activeElement.type)?_c(_vm.widgetStyle[i],{key:i,tag:"component",attrs:{"active-element":_vm.activeElement}}):_vm._e()}),1):_vm._e()};
 	var __vue_staticRenderFns__$3 = [];
 
 	  /* style */
 	  var __vue_inject_styles__$3 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$3 = "data-v-489911e2";
+	  var __vue_scope_id__$3 = "data-v-51fb1598";
 	  /* module identifier */
 	  var __vue_module_identifier__$3 = undefined;
 	  /* functional template */
@@ -1318,7 +1331,7 @@
 	  /* style */
 	  var __vue_inject_styles__$6 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$6 = "data-v-6a0cf2be";
+	  var __vue_scope_id__$6 = "data-v-30079dbc";
 	  /* module identifier */
 	  var __vue_module_identifier__$6 = undefined;
 	  /* functional template */
@@ -1605,7 +1618,9 @@
 	  props: ['zoom'],
 
 	  data: function data () {
-	    return {}
+	    return {
+	        height: 800
+	    }
 	  },
 
 	  computed: {
@@ -1615,9 +1630,9 @@
 	    },
 
 	    // 画布高度
-	    height: function height () {
-	      return this.$vpd.state.page.height
-	    },
+	    // height () {
+	    //   return this.$vpd.state.page.height
+	    // },
 
 	    // 页面背景色
 	    backgroundColor: function backgroundColor () {
@@ -1679,6 +1694,7 @@
 	      },
 	      true
 	    );
+	      this.height = document.body.clientHeight - 104;
 	  },
 
 	  methods: {
@@ -1741,7 +1757,7 @@
 	  /* style */
 	  var __vue_inject_styles__$9 = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$9 = "data-v-2a461ef8";
+	  var __vue_scope_id__$9 = "data-v-c059ce7c";
 	  /* module identifier */
 	  var __vue_module_identifier__$9 = undefined;
 	  /* functional template */
@@ -2323,6 +2339,9 @@
 	      this.$vpd.commit('select', {
 	        uuid: uuid || -1
 	      });
+	    },
+	    preview: function preview() {
+	        this.$vpd.dispatch('preview');
 	    }
 	  }
 	};
@@ -2330,13 +2349,13 @@
 	/* script */
 	var __vue_script__$d = script$d;
 	/* template */
-	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app page-design-wrap"},[_c('navbar'),_vm._v(" "),_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-wrap"},[_c('vpd-slider',{attrs:{"value":_vm.zoom,"step":1,"tuning":false},on:{"input":_vm.dozoom}}),_vm._v(" "),_c('div',{staticClass:"zoom-value"},[_vm._v(_vm._s(_vm.zoom)+"%")])],1)],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
+	var __vue_render__$d = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"app page-design-wrap"},[_c('navbar',{on:{"preview":_vm.preview}}),_vm._v(" "),_c('div',{staticClass:"body container grid-xl"},[_c('div',{staticClass:"columns col-gapless"},[_c('toolbar',{staticClass:"toolbar column",attrs:{"zoom":_vm.zoom}}),_vm._v(" "),_c('div',{staticClass:"viewport column"},[_c('viewport',{attrs:{"zoom":_vm.zoom}})],1),_vm._v(" "),_c('panel',{staticClass:"control-panel column"})],1)]),_vm._v(" "),_c('vpd-uploader',{attrs:{"upload":_vm.upload,"upload-option":_vm.uploadOption}}),_vm._v(" "),_c('vpd-toast')],1)};
 	var __vue_staticRenderFns__$d = [];
 
 	  /* style */
 	  var __vue_inject_styles__$d = undefined;
 	  /* scoped */
-	  var __vue_scope_id__$d = "data-v-0a4ac68e";
+	  var __vue_scope_id__$d = "data-v-703150a6";
 	  /* module identifier */
 	  var __vue_module_identifier__$d = undefined;
 	  /* functional template */

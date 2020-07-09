@@ -62,14 +62,15 @@ export default {
     addWidget (e, item) {
       console.log(item)
       console.log(this.layers)
-      if (item.name === 'braid-top-bar' || item.name === 'braid-bottom-bar' || item.name === 'braid-browser') {
-        const res = this.layers.find(i => {
-          return i.type === item.name
-        })
-        if (res) {
-          return
+        if (item.name === 'fixedContainer') {
+            const res = this.layers.find(i => {
+                return i.type === item.name
+            })
+            if (res) {
+                alert('已经存在一个固定容器')
+                return
+            }
         }
-      }
       this.$vpd.dispatch('addWidget', item)
     },
 

@@ -67,7 +67,9 @@ export default {
   props: ['zoom'],
 
   data () {
-    return {}
+    return {
+        height: 800
+    }
   },
 
   computed: {
@@ -77,9 +79,9 @@ export default {
     },
 
     // 画布高度
-    height () {
-      return this.$vpd.state.page.height
-    },
+    // height () {
+    //   return this.$vpd.state.page.height
+    // },
 
     // 页面背景色
     backgroundColor () {
@@ -139,6 +141,7 @@ export default {
       },
       true
     )
+      this.height = document.body.clientHeight - 104
   },
 
   methods: {
@@ -214,7 +217,7 @@ export default {
   background-size: 26px 26px;
 }
 .screen {
-  width: 750px;
+  width: 700px;
   margin: 25px auto;
   transform-origin: center top;
   position: relative;

@@ -100,7 +100,7 @@ export default {
 @import '../_variables.scss';
 .header {
   background-color: #24292e;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 .navbar {
   .svg-icon {

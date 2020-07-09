@@ -1,6 +1,6 @@
 <template>
   <div class="app page-design-wrap">
-    <navbar/>
+    <navbar @preview="preview" />
     <div class="body container grid-xl">
       <div class="columns col-gapless">
         <toolbar
@@ -8,14 +8,14 @@
           class="toolbar column"/>
         <div class="viewport column">
           <viewport :zoom="zoom"/>
-          <div class="zoom-wrap">
-            <vpd-slider
-              :value="zoom"
-              :step="1"
-              :tuning="false"
-              @input="dozoom" />
-            <div class="zoom-value">{{ zoom }}%</div>
-          </div>
+          <!--<div class="zoom-wrap">-->
+            <!--<vpd-slider-->
+              <!--:value="zoom"-->
+              <!--:step="1"-->
+              <!--:tuning="false"-->
+              <!--@input="dozoom" />-->
+            <!--<div class="zoom-value">{{ zoom }}%</div>-->
+          <!--</div>-->
         </div>
         <panel class="control-panel column"/>
       </div>
@@ -98,6 +98,9 @@ export default {
       this.$vpd.commit('select', {
         uuid: uuid || -1
       })
+    },
+    preview() {
+        this.$vpd.dispatch('preview')
     }
   }
 }
