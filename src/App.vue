@@ -83,6 +83,8 @@ export default {
     this.$vpd.$on('preview', () => {
       this.$emit('preview', this.$vpd.state)
     })
+
+    this.$vpd.commit('zoom', 100)
   },
   mounted () {
     // 初始化选中元件（将页面作为初始选中元件）

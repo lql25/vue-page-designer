@@ -99,7 +99,7 @@ export default {
             val: left
           })
         }
-        if (cor.indexOf(right) < 0 && right < 750) {
+        if (cor.indexOf(right) < 0 && right < 700) {
           cor.push({
             id: `verti-${val.uuid}-${right}`,
             val: right
